@@ -9,8 +9,6 @@ through Tasks.
 @docs setItem
 @docs removeItem
 @docs clear
-@docs keys
-@docs length
 -}
 
 import Json.Encode exposing (Value)
@@ -62,17 +60,3 @@ removeItem =
 clear : Task String ()
 clear =
   Native.Storage.clear
-
-
-{-| Get a list of all keys in local storage
--}
-keys : Task String (List String)
-keys =
-  Native.Storage.keys
-
-
-{-| Get the number of keys in local storage
--}
-length : Task String Int
-length =
-  Native.Storage.length

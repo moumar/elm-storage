@@ -64,7 +64,7 @@ Elm.Native.Storage.make = function(localRuntime) {
   var removeItem = function(key) {
     return Task.asyncFunction(function(callback) {
       try {
-        storage.removeItem(key, value);
+        storage.removeItem(key);
         callback(Task.succeed(Utils.Tuple0));
       } catch (e) {
         callback(Task.fail("Storage Call: removeItem has failed with key: " + key));

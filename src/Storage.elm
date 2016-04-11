@@ -14,7 +14,6 @@ through Tasks.
 import Json.Encode exposing (Value)
 import Json.Decode exposing (Decoder, decodeValue)
 import Task exposing (Task, succeed, fail, andThen)
-import List
 import Native.Storage
 
 

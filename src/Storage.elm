@@ -1,4 +1,4 @@
-module Storage (..) where
+module Storage exposing (..)
 
 {-| This library provides access to the HTML LocalStorage API
 through Tasks.
